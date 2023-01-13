@@ -65,6 +65,8 @@ struct MainContent: View {
             CaseStudyScrollViewStatic()
         case .scrollViewDynamic:
             CaseStudyScrollViewDynamic()
+        case .scrollViewReader:
+            CaseStudyScrollViewReader()
         case .listDynamic:
             CaseStudyListDynamic()
         case .listStatic:

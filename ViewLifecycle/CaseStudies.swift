@@ -21,6 +21,7 @@ struct CaseStudy: Identifiable, Equatable {
         case navigationStack
         case opacity
         case scrollViewDynamic
+        case scrollViewReader
         case scrollViewStatic
         case `switch`
         case tabView
@@ -43,6 +44,11 @@ let categories: [Category] = [
         label: "ScrollView",
         elements: [
             CaseStudy(id: .scrollViewStatic, label: "ScrollView with static content"),
+            CaseStudy(
+                id: .scrollViewReader,
+                label: "ScrollViewReader with dynamic content",
+                description: "A List embedded in a ScrollViewReader"
+            ),
             CaseStudy(
                 id: .scrollViewDynamic,
                 label: "ScrollView with dynamic content",
